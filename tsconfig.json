@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,7 +20,18 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "incremental": false,
+  "lib": [
+    "dom",
+    "dom.iterable",
+    "esnext"
+  ],
   "include": [
-    "src"
+    "src/**/*"
+  ],
+  "types": [
+    "node",
+    "jest",
+    "@testing-library/jest-dom"
   ]
 }
